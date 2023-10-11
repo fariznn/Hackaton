@@ -1,78 +1,177 @@
-
-.navbar img{
-    width: 20%;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar img {
+  width: 20%;
 }
 
-.custom-button1{
-    background-color: white;
-    color: black;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+.custom-button1 {
+  background-color: white;
+  color: black;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 .custom-button1:hover {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
-.custom-button{
-    background-color: rgb(63, 158, 63);
-    color: white;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+.custom-button {
+  background-color: rgb(63, 158, 63);
+  color: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 .custom-button:hover {
-    background-color: white;
-    color: green;
+  background-color: white;
+  color: green;
 }
-#hero{
-    padding-top: 90px;
-    background-color: black;
+#hero {
+  padding-top: 90px;
+  background-color: black;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hl{
-    color: green;
+.hl {
+  color: green;
 }
 .custom-but-width {
-    width: 150px; /* Set your desired custom width here */
+  width: 150px; /* Set your desired custom width here */
 }
 
+.custom-column {
+  padding-top: 400px; /* Adjust the top padding as needed */
+  padding-bottom: 400px; /* Adjust the bottom padding as needed */
+  background-image: url("../img/costumer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+ 
+}
 
-        .custom-column {
-            padding-top: 400px; /* Adjust the top padding as needed */
-            padding-bottom: 400px; /* Adjust the bottom padding as needed */
-            background-image: url('../img/costumer.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        filter: grayscale(100%);
-        }
+.custom-column1 {
+  padding-top: 400px; /* Adjust the top padding as needed */
+  padding-bottom: 400px; /* Adjust the bottom padding as needed */
+  background-image: url("../img/owner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 
-        .custom-column1 {
-            padding-top: 400px; /* Adjust the top padding as needed */
-            padding-bottom: 400px; /* Adjust the bottom padding as needed */
-            background-image: url('../img/owner.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        filter: grayscale(100%);
-        }
+}
 
-.faq-columns{
-    width: 700px;
-    border: 1px solid rgb(1, 223, 1);
+.faq-columns {
+  width: 700px;
+  border: 1px solid rgb(1, 223, 1);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.faq-columns .a:focus{
+  outline: none;
+}
+
+.faq-columns1 {
+  width: 700px;
+  padding: 10px;
+}
+
+fieldset {
+    border: 1px solid #000; /* Add border with 1px width and black color */
     border-radius: 10px;
-    padding: 10px;
 }
 
-.faq-columns1{
-    width: 700px;
-    padding: 10px;
+legend {
+    width: 40%;
+    font-weight: bold;
+}
+
+footer{
+  color: white;
+  background-color: #242424;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#FAQ a:hover{
+  text-decoration: none;
+}
+
+#FAQ a{
+  color: black;
+}
+#FAQ button{
+  width: 60px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+#FAQ button{
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+#FAQ img{
+  width: 10px;
+  height: 10px;
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#Card-loc{
+  background-color: black;
+}
+
+.back-img{
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-image: url("../img/image\ 16.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.noUi-connect {
+  background: green;
+}
+
+.noUi-handle {
+  background: green;
+  border: 2px solid green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+#handle-values {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#min-value {
+  position: absolute;
+  left: 0;
+}
+
+#max-value {
+  position: absolute;
+  right: 0;
 }

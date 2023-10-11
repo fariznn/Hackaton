@@ -1,68 +1,104 @@
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-  
-    <!-- style.css -->
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light custom-navbar fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/img/Workfrom.jpg" alt="" class="mr-1">
-                Workfrom
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-2">
-                        <button class="btn custom-button1">Register</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn custom-button">Login</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     
-     <section id="hero" class="text-center text-white">
-        <div class="col-md-6 mx-auto">
-            <h6 class="pt-5">Office & Coworking Space</h6>
-            <h1 class="pt-3">Temukan Ruangan untuk <span class="hl">Setiap Pekerjaan</span></h1>
-            <h6 class="col-md-11 mx-auto pt-4 pb-5">
-                Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja yang sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan kerja Anda sekarang dan tingkatkan produktivitas kerja Anda!
-            </h6>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light custom-navbar fixed-top"
+    >
+      <div class="container p-3">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="/img/briefcase.png" alt="" class="mr-3" />
+          <span>Workfrom</span>
+        </a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+              <button class="btn custom-button1">Register</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn custom-button">Login</button>
+            </li>
+          </ul>
         </div>
-        <img src="img/Group-11608.png" alt="" class="img-fluid">
-      </section>
+      </div>
+    </nav>
 
-      <section id="kebutuhan" class="bg-light text-center text-black">
-        <div class="mx-auto pb-5">
+    <section id="hero" class="text-center text-white">
+      <div class="col-md-6 mx-auto">
+        <h6 class="pt-5">Office & Coworking Space</h6>
+        <h1 class="pt-3">
+          Temukan Ruangan untuk<span class="hl">Setiap Pekerjaan</span>
+        </h1>
+        <h6 class="mx-auto pt-4 pb-5">
+          Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan
+          kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja yang
+          sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan kerja Anda
+          sekarang dan tingkatkan produktivitas kerja Anda!
+        </h6>
+      </div>
+      <img src="img/Group-11608.png" alt="" class="img-fluid" />
+    </section>
+
+    <section id="kebutuhan" class="bg-light text-center text-black">
+        <div class="mx-auto pb-5 text-center">
             <h1 class="pt-5">Sesuaikan dengan <span class="hl">Kebutuhan</span></h1>
             <div class="pt-4">
-                <button class="btn custom-button custom-but-width mr-3">Event</button>
-<button class="btn custom-button1 custom-but-width mr-3">Meeting</button>
-<button class="btn custom-button1 custom-but-width mr-3">Photo Shoot</button>
-<button class="btn custom-button1 custom-but-width mr-3">Video Shoot</button>
+                <button class="btn custom-button1 custom-but-width mr-3" data-target="eventDiv">Event</button>
+                <button class="btn custom-button1 custom-but-width mr-3" data-target="meetingDiv">Meeting</button>
+                <button class="btn custom-button1 custom-but-width mr-3" data-target="photoShootDiv">Photo Shoot</button>
+                <button class="btn custom-button1 custom-but-width mr-3" data-target="videoShootDiv">Video Shoot</button>
             </div>
-            <h6 class="pt-5">
-                Rayakan perayaan dan acara terbaik dengan tempat pilihan terbaik dan akses lebih mudah
-            </h6>
-            <button class="btn custom-button custom-but-width">Book Now</button>
+            <div id="eventDiv" class="pt-5 d-none">
+                <p class="pb-5">Rayakan perayaan dan acara terbaik dengan tempat pilihan terbaik dan akses lebih mudah.</p>
+                <img src="img/image 7.png" alt="" class="d-flex mx-auto pb-5">
+                <button class="btn custom-button custom-but-width mr-3" >Book Now</button>
+            </div>
+            <div id="meetingDiv" class="pt-5 d-none">
+                This is the content for Meeting.
+            </div>
+            <div id="photoShootDiv" class="pt-5 d-none">
+                This is the content for Photo Shoot.
+            </div>
+            <div id="videoShootDiv" class="pt-5 d-none">
+                This is the content for Video Shoot.
+            </div>
         </div>
-      </section>
+    </section>
 
-    
-     <section class="cust-own">
+
+
+    <!-- <section class="cust-own">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 custom-column">
@@ -81,106 +117,264 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section id="FAQ">
-        <div class="ml-5 pt-5 pb-5">
-            <h1>Frequently Asked Question</h1>
-            <a class="btn d-flex" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <div class="d-flex faq-columns mt-3">
-                    <p class="mt-3 ml-5 ">Apa Itu Workfrom?</p>
-                    <button class="btn ml-auto mr-5">test</button>
-                </div>
-            </a>
-            <div class="collapse" id="collapseExample">
-                <div class="faq-columns1 ml-3">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-            </div>
-            <a class="btn d-flex" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                <div class="d-flex faq-columns mt-3">
-                    <p class="mt-3 ml-5 ">Apa Itu Workfrom?</p>
-                    <button class="btn ml-auto mr-5">test</button>
-                </div>
-            </a>
-            <div class="collapse" id="collapseExample1">
-                <div class="faq-columns1 ml-3">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-            </div>
-            <a class="btn d-flex" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                <div class="d-flex faq-columns mt-3">
-                    <p class="mt-3 ml-5 ">Apa Itu Workfrom?</p>
-                    <button class="btn ml-auto mr-5">test</button>
-                </div>
-            </a>
-            <div class="collapse" id="collapseExample3">
-                <div class="faq-columns1 ml-3">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-              
-        </div>
-    </section>
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    
-                </div>
-                <div class="col-md-6">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Partner Kami">
-        <h1 class="pt-5">Partner Kami</h1>
-    </section>
-    
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    </section> -->
+
+    <section class="cust">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2022</small>
+          <div class="col-md-6 custom-column">
+            <a href="#link1" class="d-block"> </a>
           </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
+          <div
+            class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="col-md-9 d-flex flex-column align-items-center justify-content-center"
+            >
+              <h1>Space Terbaik untuk Semua Tim dan Pekerjaan Anda</h1>
+              <h6 class="pt-4 pb-4">
+                Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan
+                kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja
+                yang sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan
+                kerja Anda sekarang dan tingkatkan produktivitas kerja Anda!
+              </h6>
+              <button class="btn custom-button custom-but-width">
+                Book Now
+              </button>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-</body>
+      </div>
+    </section>
+
+    <section class="owner">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="col-md-9 d-flex flex-column align-items-center justify-content-center"
+            >
+              <h1>Space Terbaik untuk Semua Tim dan Pekerjaan Anda</h1>
+              <h6 class="pt-4 pb-4">
+                Dengan berbagai pilihan ruangan yang dapat disesuaikan dengan
+                kebutuhan Anda, kami akan membantu Anda mencari ruangan kerja
+                yang sesuai dengan anggaran dan kebutuhan Anda. Temukan ruangan
+                kerja Anda sekarang dan tingkatkan produktivitas kerja Anda!
+              </h6>
+              <button class="btn custom-button custom-but-width">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 custom-column1">
+            <a href="#link1" class="d-block"> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="FAQ">
+      <div class="ml-5 pt-5 pb-5">
+        <h1>Frequently Asked Question</h1>
+        <a
+          class="d-flex"
+          data-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          <div class="d-flex faq-columns mt-3">
+            <p class="mt-3 ml-5">Apa Itu Workfrom?</p>
+            <button class="ml-auto mr-3 mt-1 rounded-circle"><img src="img/Vector 205.png" alt=""></button>
+          </div>
+        </a>
+        <div class="collapse" id="collapseExample">
+          <div class="faq-columns1 ml-3">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </div>
+        </div>
+        <a
+          class="d-flex"
+          data-toggle="collapse"
+          href="#collapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample1"
+        >
+          <div class="d-flex faq-columns mt-3">
+            <p class="mt-3 ml-5">Fasilitas apa saja yang ditawarkan?</p>
+            <button class="ml-auto mr-3 mt-1 rounded-circle"><img src="img/Vector 205.png" alt=""></button>
+          </div>
+        </a>
+        <div class="collapse" id="collapseExample1">
+          <div class="faq-columns1 ml-3">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </div>
+        </div>
+        <a
+          class="d-flex"
+          data-toggle="collapse"
+          href="#collapseExample3"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample3"
+        >
+          <div class="d-flex faq-columns mt-3">
+            <p class="mt-3 ml-5">Apakah buka di akhir pekan dan hari libur?</p>
+            <button class="ml-auto mr-3 mt-1 rounded-circle"><img src="img/Vector 205.png" alt=""></button>
+          </div>
+        </a>
+        <div class="collapse" id="collapseExample3">
+          <div class="faq-columns1 ml-3">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="text-center">
+        <fieldset class="ml-3 mr-3">
+            <legend><h1>Pesan Ruangan Sekarang</h1></legend>
+            <div class="row m-5">
+                <div class="col-md-6 text-left">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nama</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Email</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your email">
+                        </div>
+                        <div class="form-grup">
+                            <label for="exampleInputPassword1">Tipe Acara</label>
+                            <select class="form-control">
+                                <option>Please select</option>
+                              </select>
+                        </div>
+                        <div class="form-grup pt-3">
+                            <label for="exampleInputPassword1">Pax (Jumlah Orang)</label>
+                            <select class="form-control">
+                                <option>Please select</option>
+                              </select>
+                        </div>
+                      </form>
+                  </div>
+                   <div class="col-md-6 text-left">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nomor Ponsel</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your phone number">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Nama Perusahaan</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your company name">
+                      </div>
+                      <div class="form-grup">
+                            <label for="exampleInputPassword1">Building</label>
+                            <select class="form-control">
+                                <option>Please select</option>
+                                <option>Please select</option>
+                              </select>
+                        </div>
+                        <div class="form-grup pt-3">
+                            <label for="exampleInputPassword1">Dipesan Melalui  </label>
+                            <select class="form-control">
+                                <option>Please select</option>
+                              </select>
+                            </div>
+                </div>
+                <div class="pt-5 ml-3">
+                    <button class="btn custom-button custom-but-width">Pesan</button>
+                </div>
+            </div>
+            
+        </fieldset>
+    </section>
+
+    <section id="Partner Kami">
+      <div class="container-fluid text-center pb-5 pt-5">
+        <img src="/img/Frame 1000005970.png" alt="" class="img-fluid" />
+      </div>
+    </section>
+
+    <footer class="">
+      <div class="row container-fluid">
+        <div class="col-4 ml-5">
+          <div class="d-flex">
+            <img
+            class="mb-4"
+            src="/img/briefcase (1).png"
+            alt=""
+            width="40"
+            height="45"
+          />
+          <h3 class="ml-3 mt-1">workfrom</h3>
+          </div>
+          <p class="text-left text-muted">Komp. Ruko Centre Point Medan Jalan Timor Blok G No. III/IV 2nd Floor, Gang Buntu, Medan Timur, Medan City, North Sumatra 20231</p>
+          <small class="text-muted">(+6261) 805 109 77</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>LOCATION</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Clapham</a></li>
+            <li><a class="text-muted" href="#">The 101</a></li>
+            <li><a class="text-muted" href="#">Yafurni</a></li>
+            <li><a class="text-muted" href="#">Kalingga</a></li>
+            <li><a class="text-muted" href="#">Spasi</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>USE CASE</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Event</a></li>
+            <li><a class="text-muted" href="#">Meeting</a></li>
+            <li><a class="text-muted" href="#">Photo Shoot</a></li>
+            <li><a class="text-muted" href="#">Office</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>COMPANY</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Contact Us</a></li>
+            <li><a class="text-muted" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                // Hide all divs
+                $('[id$="Div"]').addClass('d-none');
+
+                // Show the corresponding div
+                var targetDiv = $(this).data('target');
+                $('#' + targetDiv).removeClass('d-none');
+            });
+
+            // Initially show the content for the first button
+            $('#eventDiv').removeClass('d-none');
+        });
+    </script>
+  </body>
 </html>
