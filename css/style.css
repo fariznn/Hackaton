@@ -146,32 +146,183 @@ footer{
   background-position: center;
 }
 
-.noUi-connect {
-  background: green;
+#hero-pemesanan{
+  padding-top: 90px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+
 }
 
-.noUi-handle {
-  background: green;
-  border: 2px solid green;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -7px;
-  cursor: pointer;
+.square {
+  width: 30px; /* Fixed width of 10 pixels */
+  height: 30px; /* Fixed height of 10 pixels */
+  background-color: #3498db; /* Change the color as needed */
 }
 
-#handle-values {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
-#min-value {
-  position: absolute;
-  left: 0;
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:70%;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
-#max-value {
-  position: absolute;
-  right: 0;
+.rating {
+  float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+  follow these rules. Every browser that supports :checked also supports :not(), so
+  it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    /* padding:0 .1em; */
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:300%;
+    /* line-height:1.2; */
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #A6F38E;
+    
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #A6F38E;
+    
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #A6F38E;
+    
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+#hero-pemesanan-2{
+  padding-top: 90px;
+  background-color: #E6E6E6;
+}
+
+.checked {
+  color: #A6F38E;
+}
+
+#hero-blog{
+  padding-top: 90px;
+  
+}
+
+.back-img1{
+  background-image: url("../img/image\ 37.png");
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.search-bar{
+  width: 40%;
+  height: 80px;
+  border-radius: 20px;
+
+}
+
+.custom-card {
+  width: 50%;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+.custom-card:last-child {
+  margin-right: 0; /* Remove margin for the last card */
+}
+
+.custom-button2 {
+  background-color: #A6F38E;
+  color: black;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.hero-img {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.back-img2 {
+  width: 90%;
+  margin-top: -200px; /* Adjust the negative margin as needed to control the overlap */
+  z-index: 1; /* To ensure the second image appears on top of the first one */
+}
+
+.blog-bdy{
+  margin-left: 5%;
+}
+
+.back-bdy{
+  background-color: black;
+}
+
+.form-custom{
+  border-radius: 10px;
+  border: 1px solid rgb(1, 223, 1);
+}
+
+.custom-input,
+.custom-textarea {
+  border: 2px solid #A6F38E; 
+  border-radius: 20px; 
+  height: 60px; 
+}
+
+.custom-textarea {
+  height: auto; 
+}
+
+.contact{
+  background-color: black;
+}
+
+
+.sect{
+  color: black;
 }
